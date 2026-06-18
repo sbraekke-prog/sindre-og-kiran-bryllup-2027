@@ -41,6 +41,22 @@ header nav ul li {
     width: auto;
 }
 
+@media (max-width: 768px) {
+    
+    header, .hero {
+        padding: 30px 20px !important; 
+        height: auto !important; 
+        min-height: auto !important;
+    }
+
+    header h1, .hero h1 {
+        font-size: 2rem !important; 
+        line-height: 1.2 !important; 
+        margin-bottom: 10px !important; 
+    }
+    
+}
+
 nav ul li a {
     color: #fff;
     text-decoration: none;
