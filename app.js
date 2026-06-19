@@ -20,11 +20,10 @@ container.addEventListener('scroll', () => {
         }
     });
 });
-
 function apneModal(faneId) {
     const modal = document.getElementById('info-modal');
     modal.style.display = 'flex';
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = 'hidden'; 
     
     byttFane(faneId);
 }
@@ -32,16 +31,20 @@ function apneModal(faneId) {
 function lukkModal() {
     const modal = document.getElementById('info-modal');
     modal.style.display = 'none';
-    document.body.style.overflow = '';
+    document.body.style.overflow = ''; 
 }
 
 function byttFane(faneId) {
-    document.querySelectorAll('.fane-innhold').forEach(innhold => {
+    const alleInnhold = document.querySelectorAll('.fane-innhold');
+    alleInnhold.forEach(innhold => {
         innhold.classList.remove('aktiv');
     });
-    document.querySelectorAll('.tab-knapp').forEach(knapp => {
+
+    const alleKnapper = document.querySelectorAll('.tab-knapp');
+    alleKnapper.forEach(knapp => {
         knapp.classList.remove('aktiv');
     });
+
     const valgtInnhold = document.getElementById(`fane-innhold-${faneId}`);
     const valgtKnapp = document.getElementById(`tab-btn-${faneId}`);
 

@@ -13,6 +13,11 @@ body {
     min-height: 100vh;
 }
 
+body h3 {
+    font-family: 'Cormorant Garamond', serif;
+    size: 200px;
+}
+
 main {
     flex: 1;
 }
@@ -129,7 +134,7 @@ nav ul li a:hover {
     right: -320px;
     width: 280px;
     height: auto;
-    background-color: #141b57f2;;
+    background-color: #141b57f2;
     padding: 100px 40px;
     display: flex;
     flex-direction: column;
@@ -291,7 +296,7 @@ nav ul li a:hover {
 .tab-knapp {
     background: none;
     border: none;
-    color: #fff, 0.6;
+    color: #fff;
     padding: 10px 15px;
     font-size: 15px;
     cursor: pointer;
@@ -299,8 +304,11 @@ nav ul li a:hover {
     transition: all 0.2s;
     white-space: nowrap;
 }
+.tab-knapp p {
+    color:#fff;
+}
 .tab-knapp :hover, .tab-knapp.aktiv {
-    color: #fff;
+    color: #fff
 }
 .tab-knapp.aktiv {
     border-bottom-color: #fff;
@@ -312,12 +320,25 @@ nav ul li a:hover {
     color: #fff;
     place-content: 1;
 }
+
 .fane-innhold {
     display: none;
 }
 .fane-innhold.aktiv {
     display: block;
 }
+.modal-innhold-container h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2em;
+    font-weight: bold;
+    padding:5px;
+}
+.modal-innhold-container p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.3em;
+    padding: 5px;
+}
+
 .karusell-indikatorer {
     display: flex;
     justify-content: center;

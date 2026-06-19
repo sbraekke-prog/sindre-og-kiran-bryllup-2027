@@ -39,7 +39,7 @@
                             <h2>RSVP <span class="boks-ikon">📩</span></h2>
                             <p>Her kan du svare på vår invitasjon ved å fylle ut RSVP-skjemaet.</p>
                             <p>Svar på om du har noen allergier eller andre behov.</p>
-                            <button class="mer-info-knapp" type="button" onclick= "apneModal('RSVP')">Her kan du svare på vår invitasjon</button>
+                            <button class="mer-info-knapp" type="button" onclick= "apneModal('rsvp')">Her kan du svare på vår invitasjon</button>
                         </div>
                         <div class="info-boks" id="vielsen">
                             <h2>Vielsen<span class="boks-ikon">⛪️</span></h2>
@@ -70,38 +70,38 @@
                             <button class="mer-info-knapp" type="button" onclick="window.location.href='/kontakt'">Les spørsmål og svar</button>
                         </div>
                     </section>
-                    <div id ="info-modal" class="modal-backdrop">
-                        <div class="modal-vindu">
+                    <div id="info-modal" class="modal-backdrop">
+                        <div class="modal-vindu"> 
                             <button class="lukk-modal-knapp" onclick="lukkModal()">&times;</button>
-                            <nav class="modal-tabs">
-                                <button class="tab-knapp" id="tab-button-rsvp" onclick="byttFane('rsvp')">RSVP 📩</button>
-                                <button class="tab-knapp" id="tab-button-vielsen" onclick="byttFane('vielsen')">Vielsen ⛪️</button>
-                                <button class="tab-knapp" id="tab-button-fest-og-middag" onclick="byttFane('fest-og-middag')">Fest og middag 🎉</button>
-                                <button class="tab-knapp" id="tab-button-gaveliste" onclick="byttFane('gaveliste')">Gaveliste 🎁</button>
-                            </nav>
-                            <div class="modal-innhold-container">
-                                <div id="fane-innhold-rsvp" class="fane-innhold">
-                                    <h3>Svar på invitasjonen</h3>
-                                    <p>Skjema for RSVP</p>
-                                </div>
-                            <div id="fane-innhold-vielsen" class="fane-innhold">
-                                <h3>Informasjon om vielsen</h3>
-                                <p> Vielsen finner sted i Gamle Fredrikstad Kirke</p>
-                                <p>Her kommer informasjon om veibeskrivelse, klesskode, program, parkering</p>
-                            </div>
-                            <div class="modal-innhold-fest-og-middag" class="fane-innhold">
-                                <h3>Fest og middag på Skjellumfjellet</h3>
-                                <p>Det blir middag fra kl 17 hvor vi starter med apertif</p>
-                                <p>Veibeskrivelse og kleskode</p>
-                            </div>
-                            <div class="modal-innhold-gaveliste" class="fane-innhold">
-                                <h3>Gaveliste</h3>
-                                <p> Vi har registrert oss flere steder, her finner du en liste</p>
-                            </div>
-                            </div>
+                                <nav class="modal-tabs">
+                                    <button class="tab-knapp" id="tab-btn-rsvp" onclick="byttFane('rsvp')">📩 RSVP</button>
+                                    <button class="tab-knapp" id="tab-btn-vielsen" onclick="byttFane('vielsen')">⛪ Vielsen</button>
+                                    <button class="tab-knapp" id="tab-btn-fest-og-middag" onclick="byttFane('fest-og-middag')">🎉 Festen</button>
+                                    <button class="tab-knapp" id="tab-btn-gaveliste" onclick="byttFane('gaveliste')">🎁 Gaver</button>
+                                </nav>
+                    <div class="modal-innhold-container">
+                        <div id="fane-innhold-rsvp" class="fane-innhold">
+                            <h3>Svar på invitasjon</h3>
+                            <p>Her kommer RSVP-skjemaet etter hvert.</p>
                         </div>
+                        <div id="fane-innhold-vielsen" class="fane-innhold">
+                            <h3>Vielsen i Gamle Fredrikstad Kirke</h3>
+                            <p>Dato: 14. august 2027<br>Tid: Kl. 13:00</p>
+                            <p>Her kan du pøse på med veibeskrivelse, parkeringsinfo og program for kirken.</p>
+                        </div>
+                    <div id="fane-innhold-fest-og-middag" class="fane-innhold">
+                        <h3>Fest og middag på Skjellumfjellet</h3>
+                        <p>Middag starter kl. 17:00.</p>
+                        <p>Her kan du legge inn kleskode, info om toastmaster og veibeskrivelse til lokalet.</p>
                     </div>
-            </main>
+                        <div id="fane-innhold-gaveliste" class="fane-innhold">
+                            <h3>Gaveliste</h3>
+                            <p>Her kommer lenker til gavelistene deres.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </main>
 </body>
 <footer>
                 <p>© Brullypet til Kiran og Sindre | 2027</p>
