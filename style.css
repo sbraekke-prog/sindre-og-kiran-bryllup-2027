@@ -52,7 +52,8 @@ header nav ul li {
     header h1, .hero h1 {
         font-size: 2rem !important; 
         line-height: 1.2 !important; 
-        margin-bottom: 10px !important; 
+        margin-bottom: 10px !important;
+        margin-right: 10px !important; 
     }
     
 }
